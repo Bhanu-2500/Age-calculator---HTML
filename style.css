@@ -1,0 +1,36 @@
+body{
+    /*background-color: aqua;*/
+    text-align: center;
+}
+.getDate{
+    /*background-color: blueviolet;*/
+    display:inline-block;
+    height: 30px;
+    margin-top:100px ;
+    text-align: center;
+    padding-top: 10px;
+  }
+
+.getDate h2{
+    display: inline;
+}
+
+body button{
+    margin: 30 auto 0 auto;
+    display: block;
+}
+
+.answer{
+    /*background-color: azure;*/
+    width: 500px;
+    height: 60px;
+    margin: 30 auto 0 auto;
+    text-align: center;
+
+}
+
+.answer h2{
+    display: inline;
+    margin: 10px;
+}
+ 

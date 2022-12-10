@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="getDate">
+        <h2>Enter your birhtday :   </h2>
+        <input type=date id="userDate">
+    </div>
+    <button onclick="calcDate()"> Calculate </button>
+    <div  class="answer">
+        <h2>you are</h2>
+        <h2 id="answer"></h2>
+        <h2>years old !</h2>
+
+    </div>
+ <script>
+    const today = new Date();
+    document.getElementById('answer').innerHTML= 0;
+
+    function calcDate(){
+        var userdate= document.getElementById('userDate').value;
+        const useryear =new Date(userdate);
+        const years = today.getFullYear()-useryear.getFullYear();
+        console.log(years);
+        if (!years){
+            document.getElementById('answer').innerHTML= 0;
+
+        }else{
+            document.getElementById('answer').innerHTML= years;
+        }
+        //console.log(years);
+    }
+
+ </script>   
+</body>
